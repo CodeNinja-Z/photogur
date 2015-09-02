@@ -4,7 +4,6 @@ class PicturesController < ApplicationController
   end
 
   def show
-    # id 不是model里本身的参数,而是记录在数据库的的位置,i.e.第几条记录
     @picture = Picture.find(params[:id])
   end
 
